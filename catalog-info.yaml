@@ -1,0 +1,22 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pjing-testing-public
+  description: pjing testing public repo
+  annotations:
+    github.com/project-slug: fhd-org/pjing-testing-public
+    github.com/team-slug: fhd-org/user
+    sonarqube.org/project-key: pjing-testing-public
+    backstage.io/techdocs-ref: dir:.
+    jenkins.loyalty.com/job-full-name: job/pjing-testing-public
+  tags:
+    - testing
+  links:
+    - url: https://amrp.atlassian.net/wiki/spaces/BKS/overview
+      title: Confluence
+      icon: LibraryBooks
+spec:
+  type: service
+  owner: user
+  lifecycle: nonprod
